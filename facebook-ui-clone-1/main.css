@@ -1,0 +1,433 @@
+/* login area  */
+
+.login-section {
+  background-color: #f2f6f8;
+  margin-bottom: 100px;
+}
+
+.login-bucket-2 {
+  margin-top: auto;
+  /* margin-bottom: auto; */
+}
+
+.login-row-1 {
+  padding: 100px 50px;
+}
+
+.login-title {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.login-para {
+  font-size: 25px;
+}
+
+.login-input-box {
+  margin-bottom: 20px;
+}
+
+.login-card-1 {
+  width: 80%;
+  padding: 30px 15px;
+  margin-bottom: 20px;
+}
+
+.login-button-1 {
+  margin-bottom: 20px;
+}
+
+.login-forget-password {
+  text-decoration: none;
+}
+
+.login-new-acct-btn {
+  margin-top: 20px;
+}
+
+.login-card-1 {
+  /* box-shadow: 10px 10px 5px #777; */
+}
+
+.login-para-reason-bucket {
+  /* margin-left: auto; */
+  width: 80%;
+}
+
+.login-reason-para {
+  margin-left: auto;
+}
+
+/* end login area  */
+
+/* footer area  */
+
+.footer-area {
+  margin-bottom: 0px;
+}
+
+.footer-lan {
+  padding: 10px 10px;
+  color: #777;
+  font-size: 12px;
+}
+
+/* end footer area  */
+
+/* modal area  */
+
+.modal-custom-close {
+  margin-top: 0px !important;
+}
+
+.modal-dob {
+  font-size: 10px;
+}
+
+.circle-ques {
+  text-decoration: none;
+  color: #777;
+}
+
+.gender-radio {
+  padding: 2px;
+  border: 0.5px solid #ced4da;
+}
+
+.disclaimer {
+  font-size: 10px;
+  color: #777;
+}
+
+.sign-up-button-item {
+  background-color: limegreen;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 2px 25px;
+}
+
+.pronoun-para {
+  font-size: 10px;
+}
+
+/* End modal area  */
+
+/* ##############################################Feed Page#####################################  */
+
+/* -------------------navbar area-----------------  */
+
+.bg-gray {
+  background-color: #f0f2f5;
+}
+
+.navbar-searchbox {
+  width: 250px;
+}
+
+.search-fb {
+  font-size: 11px;
+}
+
+.search-icon {
+  font-size: 11px;
+}
+
+.search-box {
+  padding-right: 50px;
+}
+
+.single-row {
+}
+
+.search-dropdown {
+  width: 250px;
+  max-height: 450px;
+}
+
+.search-in {
+  font-size: 12px;
+}
+
+.alert-item {
+  /* padding: 0; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.close-button {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 10px;
+}
+
+.search-img {
+  object-fit: cover;
+}
+
+.main-icons {
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.grp-icon {
+  position: relative;
+}
+
+.notification {
+  font-size: 8px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  padding: 3px;
+}
+
+.main-icons-bucket {
+  cursor: pointer;
+}
+
+.main-icons:hover {
+  color: #0d6efd;
+}
+
+/* -------------------------nav end-------------------  */
+
+.nav-end {
+  position: relative;
+}
+
+.nav-end-name {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.nav-end-bucket {
+  cursor: pointer;
+}
+
+.end-icons {
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.end-icons:hover {
+  background-color: #dcdcdc;
+}
+
+/* ---------------------------------------nav-end-------------------------------------------  */
+
+.bg-fb {
+  background: #f0f2f5;
+}
+
+.ellipsis-drop-menu {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ellipsis-dd {
+  width: 600px;
+  max-height: 500px;
+}
+
+.ellipsis-search {
+  border: none !important;
+}
+
+.ellipsis-social {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ellipsis-dd-img {
+  height: 35px;
+  width: 35px;
+}
+
+.ellipsis-dd-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ellipsis-dd-para {
+  /* height: 200px; */
+  /* width: 100px; */
+  font-size: 10px;
+  /* overflow-wrap: break-word !important; */
+  /* word-wrap: break-word !important; */
+  word-break: break-word;
+}
+
+.ellipsis-dd-text {
+  /* width: 200px; */
+  /* height: 100px; */
+}
+
+.create-menu {
+  font-weight: 700;
+}
+
+.post-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ----------------------------------------------------messenger-----------------------------------  */
+
+/* *******************************************************messenger dropdown ********************* */
+
+.messenger-dd {
+  width: 300px;
+}
+
+/* ******************************************************* end  messenger dropdown ********************* */
+
+/* ----------------------------------------------------end messenger-----------------------------------  */
+
+/* =====================================main area section ============================== */
+
+.main-area {
+  margin-top: 100px;
+}
+
+/* -----------left side bar-----------  */
+
+.left-sidebar-bucket {
+  overflow: auto;
+}
+
+.left-side-bar-item-bucket {
+  padding-left: 10px;
+}
+
+.left-side-bar-item-bucket:hover {
+  background-color: #f0f2f5;
+}
+
+.acc-btn {
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+
+/* ----------- end left side bar-----------  */
+
+/* middle-area */
+
+.right-arrow-icon {
+  position: absolute;
+  top: 180px;
+  left: 875px;
+}
+
+.create-story-plus {
+  font-size: 18px;
+  position: absolute;
+  left: 400px;
+  top: 220px;
+}
+
+/* create room  */
+
+.create-room-1 {
+  position: relative;
+}
+
+.room-img-bucket-1 {
+  width: 400px;
+}
+
+.bg-light-blue {
+  /* background-color: #00ffff; */
+  background-color: #0dcaf0;
+}
+
+.room {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.room:hover {
+  background-color: rgb(115, 194, 251);
+  color: white;
+}
+
+/* end create room  */
+
+/* end middle-area */
+
+/* right-side-bar */
+
+.sponsor-ad-bucket {
+  position: relative;
+  cursor: pointer;
+}
+
+.sponsor-ad-bucket:hover {
+  filter: brightness(1.1);
+}
+
+.sponsor-ad-bucket:hover .sponsor-ad-icon {
+  opacity: 1;
+}
+
+.sponsor-ad-icon {
+  position: absolute;
+  left: 220px;
+  top: -20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* end right-side-bar */
+
+/* =====================================End main area section ============================== */
+
+/* ##############################################End Feed Page#####################################  */
+
+/* testing css  */
+
+.test-left-arr {
+  background-color: white;
+  margin-top: 150px;
+  margin-left: 50px;
+  color: black;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+}
+
+.test-left-arr:hover {
+  color: black;
+  background-color: white;
+}
+
+.test-right-arr:hover {
+  color: black;
+  background-color: white;
+}
+
+.test-right-arr {
+  background-color: white;
+  margin-top: 150px;
+  margin-right: 50px;
+  color: black;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+}
+
+.bucket {
+  margin-bottom: 200px;
+}
+
+.slider-bucket {
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-bucket-2 {
+  margin-top: 100px;
+}
+
+/* end testing css */

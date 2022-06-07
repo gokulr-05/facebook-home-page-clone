@@ -1,0 +1,3075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook UI clone</title>
+
+    <!-- fontawesome css  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- ################################### navbar area ############################################################################  -->
+
+    <section class="navigation-area bg-white fixed-top py-3 shadow ">
+      <div class="container-fluid">
+        <!-- -------------------navbar flex div-------------------  -->
+        <div class="single-row d-flex justify-content-between" >
+          <!-- nav-searchbar  -->
+            <div class="navbar-searchbox d-flex gap-1 ">
+                <i class="fa-brands fa-facebook fs-1 text-primary"></i>
+
+
+                    <!-- --------------------Mobile searchbox------------------------------------ -->
+
+                    <div data-bs-auto-close="outside" class="d-flex align-items-center justify-content-center d-lg-none  bg-gray rounded-circle px-2 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-magnifying-glass text-muted "></i>
+                        
+                    </div>
+               
+
+                    <!-- ------------desktop searchbox--------------  -->
+                    <div data-bs-auto-close="outside" class="d-none d-lg-flex flex-grow-1 align-items-center gap-2 bg-gray rounded-pill px-2  search-box" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-magnifying-glass text-muted search-icon"></i>
+                        <span class="text-capitalize text-muted search-fb ">search facebook</s>
+                    </div>
+                    <ul class="dropdown-menu border-0 shadow search-dropdown overflow-auto" aria-labelledby="dropdownMenuButton1">
+                        <li class="mx-2"><input class="text-capitalize search-in dropdown-item rounded-pill bg-gray " placeholder="Search facebook..." type="text" autofocus></li>
+                       <li class="my-1">
+                            <span type="button" class="alert-item dropdown-item  alert  alert-dismissible fade show" role="alert">
+                            <div>
+                                <img class="search-img rounded-circle" width="30px" height="30px" src="./img/1.jpg" alt="pic1">
+                                Srini
+                            </div>
+                           <button type="button" class="close-button btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                           </span>
+                        </li>
+                       <li class="my-1">
+                            <span type="button" class="alert-item dropdown-item  alert  alert-dismissible fade show" role="alert">
+                            <div>
+                                <img class="search-img rounded-circle" width="30px" height="30px" src="./img/2.jpg" alt="pic1">
+                                Prakash
+                            </div>
+                           <button type="button" class="close-button btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                           </span>
+                        </li>
+                       <li class="my-1">
+                            <span type="button" class="alert-item dropdown-item  alert  alert-dismissible fade show" role="alert">
+                            <div>
+                                <img class="search-img rounded-circle" width="30px" height="30px" src="./img/4.jpg" alt="pic1">
+                                Guru
+                            </div>
+                           <button type="button" class="close-button btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                           </span>
+                        </li>
+                      </ul>
+                
+            </div>
+
+
+
+          <!-- nav middle icon section  -->
+
+
+          <div class="nav-middle d-flex  align-items-center justify-content-between ">
+              <div class="main-icons-bucket mx-5">
+                <i class="fa-solid fa-house main-icons text-primary"></i>
+              </div>
+              <div class="main-icons-bucket grp-icon  mx-5">
+                <i class="fa-solid fa-user-group main-icons "></i>
+                <span class="notification rounded-circle bg-danger text-white ">2</span> 
+              </div>
+              
+              <div  class="main-icons-bucket  mx-5">
+                <i class="fa-solid fa-store main-icons"></i>
+              </div>
+              <div  class="main-icons-bucket  mx-5">
+                <i class="fa-solid fa-gamepad main-icons"></i>
+              </div>
+          </div>
+
+          
+
+          
+            
+            
+         
+          
+
+          <!-- nav end menu section  -->
+
+          <div class="nav-end d-lg-flex gap-2 d-none">
+              
+              <div class="nav-end-bucket">
+                  <img class="rounded-circle" height="30px" width="30px" src="./img/5.jpg" alt="">
+                  <span class="nav-end-name text-capitalize">gokul</span>
+                 
+                
+              </div>
+
+              <div class="nav-end-bucket">
+                  
+                <i data-bs-auto-close="outside" class="fa-solid fa-ellipsis end-icons bg-gray rounded-circle p-2" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>   
+
+                
+    <!------------------- ellipsis dropdown menu  ------------------------------->
+                  
+                    <div class="ellipsis-dd dropdown-menu bg-fb overflow-auto " aria-labelledby="dropdownMenuButton1">
+
+                                           
+                        <div class="container ellipsis-bucket ">
+                          <span class="ellipsis-drop-menu text-capitalize">menu</span>
+
+                          <div class="row ">
+                            <div class="col-8 ">
+
+                              <div class="card ">
+                                <div class="card-body ">
+
+                                  <div class="d-flex bg-gray rounded-pill align-items-center ">
+                                    <i class="fa-solid fa-magnifying-glass text-muted search-icon px-2"></i>
+                                    <input class="ellipsis-search dropdown-item text-capitalize search-in dropdown-item rounded-pill bg-gray " placeholder="Search facebook..." type="text" autofocus>                                    
+                                  </div>
+
+<!-- ----------------------------------------------social area-----------------------------------------  -->
+
+
+                                  <p class="ellipsis-social text-capitalize mt-3">social</p>
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/events.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">events</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                          Organise or find events and other things to do online and nearby.
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/find-friends.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">Find Friends</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                          Search Friends or People you may know. 
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/grp.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">Group</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                          Connect with people who share your interest. 
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/news.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">News Feed</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                        See relevant posts from people and Pages that you follow.  
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/pages.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">Pages</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                        Discover and connect with Businesses on Facebook.  
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+                                  <hr>
+
+
+<!-- ----------------------------------------------End social area-----------------------------------------  -->
+
+
+<!-- ----------------------------------------------Entertainment area-----------------------------------------  -->
+
+
+<p class="ellipsis-social text-capitalize mt-3">Entertainment</p>
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/gaming.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">Gaming Video</p>
+      <p class="text-muted ellipsis-dd-para">
+        Watch and connect with your favourite games and streamers. 
+      </p>
+    </div>
+
+  </span>
+</div>
+
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/play-games.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">Play Games</p>
+      <p class="text-muted ellipsis-dd-para">
+        Play your favourite games.
+      </p>
+    </div>
+
+  </span>
+</div>
+
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/grp.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">Watch </p>
+      <p class="text-muted ellipsis-dd-para">
+        A video Destination personalized to your interest and connections.
+      </p>
+    </div>
+
+   
+
+  </span>
+</div>
+
+<hr>
+
+<!-- ----------------------------------------------End Entertainment area-----------------------------------------  -->
+
+<!-- --------------------------------------shopping area-------------------------------------------------- -->
+
+<p class="ellipsis-social text-capitalize mt-3">Shopping</p>
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/gaming.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">MarketPlace</p>
+      <p class="text-muted ellipsis-dd-para">
+        Buy and Sell in your community. 
+      </p>
+    </div>
+
+  </span>
+</div>
+
+<hr>
+<!-- --------------------------------------End shopping area-------------------------------------------------- -->
+
+
+
+
+<!-- --------------------------------------Start Personal area-------------------------------------------------- -->
+
+
+<p class="ellipsis-social text-capitalize mt-3">personal</p>
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/recent-ad.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">recent ad activity</p>
+      <p class="text-muted ellipsis-dd-para">
+        See all of the ads you have interacted with on the facebook.
+      </p>
+    </div>
+
+  </span>
+</div>
+
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/memories.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">Memories</p>
+      <p class="text-muted ellipsis-dd-para">
+        Browse your old photos, videos, post on the facebook.
+      </p>
+    </div>
+
+  </span>
+</div>
+
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/saved.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">Saved</p>
+      <p class="text-muted ellipsis-dd-para">
+       find post photos and videos that you have saved for later.
+      </p>
+    </div>
+
+  </span>
+</div>
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/weather.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">weather</p>
+      <p class="text-muted ellipsis-dd-para">
+      check your local forecast and sign up for daily weather notification.
+      </p>
+    </div>
+
+  </span>
+</div>
+
+<hr>
+<!-- --------------------------------------End Personal area-------------------------------------------------- -->
+
+
+
+
+<!-- --------------------------------------professional area-------------------------------------------------- -->
+
+
+<p class="ellipsis-social text-capitalize mt-3">personal</p>
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/ads-manager.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">ads manager</p>
+      <p class="text-capitalize text-muted ellipsis-dd-para">
+        create manage and track the performance of your ads
+      </p>
+    </div>
+
+  </span>
+</div>
+
+<hr>
+<!-- --------------------------------------End Professional area-------------------------------------------------- -->
+
+
+
+
+<!-- --------------------------------------community resource area-------------------------------------------------- -->
+
+
+<p class="ellipsis-social text-capitalize mt-3">community resources</p>
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/blood-donation.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">blood donations</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                         Get updates about donating blood near you.
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/climate.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">climate science centre</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                         Learn about cimate change and its effect.
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/covid-19.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">covid-19 information centre</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                         See the latest prevention tips, communitiy resources and updates from health organisation. 
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/community.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">community help</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                        Get involved in your community by creating a drive, requesting or offering help or volunteering.  
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+                                  <div>
+                                    <span class="d-flex gap-3 ">
+
+                                      <div>
+                                        <img class="ellipsis-dd-img" src="./img/fund-raisers.png"  alt="event">
+                                      </div>
+                                      <div class="ellipsis-dd-text">
+                                        <p class="text-capitalize ellipsis-dd-title mb-0">fundraisers</p>
+                                        <p class="text-muted ellipsis-dd-para">
+                                        Donate and raise money for charities and personal cause
+                                        </p>
+                                      </div>
+
+                                    </span>
+                                  </div>
+
+                                  <hr>
+
+
+
+
+
+
+
+<!-- --------------------------------------End community resource area-------------------------------------------------- -->
+
+
+
+
+
+
+<!-- --------------------------------------Start Meta area-------------------------------------------------- -->
+
+
+<p class="ellipsis-social text-capitalize mt-3">more from meta</p>
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/messenger.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">messenger</p>
+      <p class="text-muted ellipsis-dd-para">
+       Chat to your friends and family instantly.
+      </p>
+    </div>
+
+  </span>
+</div>
+
+
+<div>
+  <span class="d-flex gap-3 ">
+
+    <div>
+      <img class="ellipsis-dd-img" src="./img/messenger-kids.png"  alt="event">
+    </div>
+    <div class="ellipsis-dd-text">
+      <p class="text-capitalize ellipsis-dd-title mb-0">messenger kids</p>
+      <p class="text-muted ellipsis-dd-para">
+        Let children message close friends and family.
+      </p>
+    </div>
+
+  </span>
+</div>
+
+
+<hr>
+
+
+<!-- --------------------------------------End Meta  area-------------------------------------------------- -->
+
+                                </div>
+                              </div>
+
+                            </div>
+
+<!-- -------------------------------------------second column menu---------------------------------------------------------  -->
+
+                            <div class="col-4">
+
+                              
+                              
+                              <div class="card">
+                                <div class="card-body">
+
+                                  <p class="text-capitalize create-menu">create</p>
+
+
+                                  <div class="my-2">
+                                    <span class="d-flex gap-3 align-items-center">
+                                  
+                                      <div><i class="fa-solid fa-pen-to-square end-icons bg-gray rounded-circle p-2""></i></div>
+                                      <div class="text-capitalize post-title">post</div>
+                                      
+                                    </span>
+                                  </div>
+
+
+                                  <div  class="my-2">
+                                    <span class="d-flex gap-3 align-items-center">
+
+                                      <div> <i class="fa-solid fa-book-open end-icons bg-gray rounded-circle p-2"></i></div>
+                                      <div class="text-capitalize post-title">story</div>
+                                      
+                                    </span>
+                                  </div>
+
+
+
+                                  <div  class="my-2">
+                                    <span class="d-flex gap-3 align-items-center">
+                                     
+                                      <div>  <i class="fa-solid fa-video end-icons bg-gray rounded-circle p-2"></i></div>
+                                      <div class="text-capitalize post-title">room</div>
+                                      
+                                    </span>
+                                  </div>
+
+                                  <hr>
+
+
+  <!-- ---------------------------------------------------------------------------------------  -->
+  
+  
+  <div class="my-2">
+    <span class="d-flex gap-3 align-items-center">
+  
+      
+      <div><i class="fa-solid fa-flag end-icons bg-gray rounded-circle p-2"></i></div>
+      <div class="text-capitalize post-title">page</div>
+      
+    </span>
+  </div>
+
+
+  <div  class="my-2">
+    <span class="d-flex gap-3 align-items-center">
+
+      <div> <i class="fa-solid fa-bullhorn end-icons bg-gray rounded-circle p-2"></i></i></div>
+      <div class="text-capitalize post-title">ad</div>
+      
+    </span>
+  </div>
+
+
+
+  <div  class="my-2">
+    <span class="d-flex gap-3 align-items-center">
+     
+      <div>  <i class="fa-solid fa-users end-icons bg-gray rounded-circle p-2"></i></div>
+      <div class="text-capitalize post-title">group</div>
+      
+    </span>
+  </div>
+  <div  class="my-2">
+    <span class="d-flex gap-3 align-items-center">
+
+      <div> <i class="fa-solid fa-calendar-plus  end-icons bg-gray rounded-circle p-2"></i></div>
+      <div class="text-capitalize post-title">event</div>
+      
+    </span>
+  </div>
+
+
+
+  <div  class="my-2">
+    <span class="d-flex gap-3 align-items-center">
+     
+      <div>  <i class="fa-solid fa-basket-shopping end-icons bg-gray rounded-circle p-2"></i></div>
+      <div class="text-capitalize post-title">marketplace <br> listing</div>
+      
+    </span>
+  </div>
+  
+  <!-- ---------------------------------------------------------------------------------------  -->
+
+                                </div>
+                              </div>
+
+
+
+                            </div>
+
+<!-- -------------------------------------------End second column menu---------------------------------------------------------  -->                            
+
+
+                          </div>
+                        
+                        </div>
+                        
+  
+                    </div>
+                        
+                        
+  <!-------------------End ellipsis dropdown menu  ------------------------------->
+
+
+                
+              </div>
+
+<!-- --------------------------------- messenger ----------------------------------- -->
+
+<div  data-bs-auto-close="outside" class="nav-end-bucket" id="messegerDD" data-bs-toggle="dropdown" aria-expanded="false">
+  <i class="fa-brands fa-facebook-messenger end-icons bg-gray rounded-circle p-2"></i>
+</div>
+
+<!-- ******************************************* messenger drop down************************** -->
+
+<div aria-labelledby="messegerDD" class="messenger-dd dropdown-menu overflow-auto p-3 shadow" style="height: 400px
+;">
+
+  <!-- row 1 -->
+  
+  <div class="d-flex justify-content-between mb-3">
+
+    <div>
+      <h4 class="text-capitalize">message</h4>
+    </div>
+
+    <div class="d-flex gap-3 text-muted">
+
+    <!-- ----------------------------------------- sub-ellipsis -----------------------------------  -->
+    <i data-bs-auto-close="outside" id="msgDD" data-bs-toggle="dropdown" aria-expanded="false" class="fa-solid fa-ellipsis text-muted fs-6" style="cursor: pointer;"></i>
+    
+    <!--  ******************************   sub-ellipsis Drop down  *********************              -->
+    
+      <div class="dropdown-menu p-2 shadow" aria-labelledby="msgDD" style=" max-height: 500px;overflow: auto;" >
+
+        <!-- ----- row 1 ------  -->
+
+        <div >
+          <p style="font-size: 18px;margin-bottom: 0;" class="text-capitalize">chat settings</p>
+          <p style="margin-bottom: 0;font-size: 10px;" class="text-muted">Customize your Messenger experience </p>
+        </div>
+        <hr>
+
+        <!-- -----end row 1 ------  -->
+
+
+        <!-- -------------- row-2 ---------------  -->
+
+        <div class="d-flex justify-content-between gap-3 ">
+          
+          <div class="m-0  d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-phone m-0"></i>
+            <p class="text-capitalize m-0" style="font-size: 13px;">incoming call sounds</p>
+          </div>
+
+        
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+           </div>
+
+        </div>
+
+        <!-- -------------- end row-2 ---------------  -->
+        <!-- -------------- row-3 ---------------  -->
+
+        <div class="d-flex justify-content-between gap-3 ">
+          
+          <div class="m-0 d-flex gap-4 align-items-center">
+            <i class="fa-solid fa-volume-off m-0"></i>
+            <p class="text-capitalize m-0" style="font-size: 13px;">message sounds</p>
+          </div>
+
+          
+
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+           </div>
+
+        </div>
+
+        <!-- -------------- end row-3 ---------------  -->
+        <!-- -------------- row-4 ---------------  -->
+
+        <div class="d-flex justify-content-between gap-3 ">
+          
+          <div class="m-0 d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-spinner m-0"></i>
+            <p class="text-capitalize m-0" style="font-size: 13px;">pop-up new messages</p>           
+          </div>
+
+         
+
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+           </div>
+
+        </div>
+
+        <!-- -------------- end row-4 ---------------  -->
+
+
+
+        <!-- -------------- row-5 ---------------  -->
+
+        <div>
+          <p class="mt-2 text-center text-capitalize text-muted" style="font-size: 10px;">automatically open new messages</p>
+        </div>
+
+        <!-- -------------- end row-5 ---------------  -->
+        <hr>
+
+        <!-- -------------- row-6 ---------------  -->
+
+          
+          <div class="m-0  d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-toggle-off  m-0"></i>
+          
+            <p class="text-capitalize m-0" style="font-size: 13px;">turn off active status</p>
+          </div>
+
+        
+         
+
+       
+        <!-- -------------- end row-6 ---------------  -->
+
+        <!-- -------------- row-7 ---------------  -->
+
+          
+          <div class="m-0  d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-message m-0"></i>
+            <p class="text-capitalize m-0" style="font-size: 13px;">message request</p>
+          </div>
+
+        
+         
+
+        <!-- -------------- end row-7 ---------------  -->
+        <!-- -------------- row-8 ---------------  -->
+
+          
+          <div class="m-0  d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-phone m-0"></i>
+            <p class="text-capitalize m-0" style="font-size: 13px;">message delivery settings</p>
+          </div>
+
+        
+         
+
+        <!-- -------------- end row-8 ---------------  -->
+        <!-- -------------- row-9 ---------------  -->
+
+          
+          <div class="m-0  d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-shield-halved m-0"></i>
+            <p class="text-capitalize m-0" style="font-size: 13px;">Block settngs</p>
+          </div>
+
+        
+         
+
+        <!-- -------------- end row-9 ---------------  -->
+
+
+
+
+
+
+
+      </div>
+    
+    <!-- ****************************** end sub-ellipsis drop down ******************************************  -->
+    
+    <!-- ----------------------------------------- end sub-ellipsis -----------------------------------  -->
+    
+    
+    
+    
+      <i class="fa-solid fa-maximize text-muted fs-6" style="cursor: pointer;"></i>
+      <i class="fa-solid fa-pen-to-square text-muted fs-6" style="cursor: pointer;"></i>
+
+    </div>
+
+  </div>
+
+  <!-- end row 1 -->
+  
+  
+  
+  <!-- row 2 -->
+  
+  <div class=" mb-3">
+
+    <div class="d-flex bg-gray rounded-pill align-items-center ">
+      <i class="fa-solid fa-magnifying-glass text-muted search-icon px-2"></i>
+      <input class="ellipsis-search dropdown-item text-capitalize search-in dropdown-item rounded-pill bg-gray " placeholder="Search facebook..." type="text" autofocus>                                    
+    </div> 
+
+  </div>
+
+  <!-- end row 2 -->
+  
+  
+  
+  <!-- row 3 -->
+  
+  <div class=" mb-3 d-flex justify-content-between" style="cursor: pointer;">
+
+    <div class="d-flex gap-3">
+      <div>
+        <img class="rounded-circle msg-img" style="object-fit: cover;" height="35px" width="35px" src="./img/9.jpg" alt="img">
+      </div>
+
+      <div class="align-self-start">
+        <p class="text-capitalize" style="font-size: 10px;margin: 0;padding: 0;">maaran</p> 
+        <p class="text-capitalize text-muted" style="font-size: 10px;margin: 0;padding: 0;">Hey Buddy!!</p>
+      </div>
+
+    </div>
+
+    <div class="align-self-center">
+      <img src="./img/9.jpg" height="15px" width="15px" class="rounded-circle" alt="">
+    </div>
+    
+
+  </div>
+
+  <!-- end row 3 -->
+
+
+
+  <!-- row 4 -->
+  
+  <div class=" mb-3 d-flex justify-content-between"  style="cursor: pointer;">
+
+    <div class="d-flex gap-3">
+      <div>
+        <img class="rounded-circle msg-img" style="object-fit: cover;" height="35px" width="35px" src="./img/8.jpg" alt="img">
+      </div>
+
+      <div class="align-self-start">
+        <p class="text-capitalize" style="font-size: 10px;margin: 0;padding: 0;">srinivasan</p> 
+        <p class="text-capitalize text-muted" style="font-size: 10px;margin: 0;padding: 0;">what's up dude?</p>
+      </div>
+
+    </div>
+
+    <div class="align-self-center">
+      <img src="./img/8.jpg" height="15px" width="15px" class="rounded-circle" alt="">
+    </div>
+  
+  </div>
+
+  <!-- end row 4 -->
+
+
+
+  <!-- row 5 -->
+  
+  <div class=" mb-3 d-flex justify-content-between"  style="cursor: pointer;">
+
+    <div class="d-flex gap-3">
+      <div>
+        <img class="rounded-circle msg-img" style="object-fit: cover;" height="35px" width="35px" src="./img/7.jpg" alt="img">
+      </div>
+
+      <div class="align-self-start">
+        <p class="text-capitalize" style="font-size: 10px;margin: 0;padding: 0;">vijay</p> 
+        <p class="text-capitalize text-muted" style="font-size: 10px;margin: 0;padding: 0;">what's the next plan?</p>
+      </div>
+
+    </div>
+
+    <div class="align-self-center">
+      <img src="./img/7.jpg" height="15px" width="15px" class="rounded-circle" alt="">
+    </div>
+  
+  </div>
+
+  <!-- end row 5 -->
+
+
+
+  <!-- row 6 -->
+  
+  <div class=" mb-3 d-flex justify-content-between"  style="cursor: pointer;">
+
+    <div class="d-flex gap-3">
+      <div>
+        <img class="rounded-circle msg-img" style="object-fit: cover;" height="35px" width="35px" src="./img/6.jpg" alt="img">
+      </div>
+
+      <div class="align-self-start">
+        <p class="text-capitalize" style="font-size: 10px;margin: 0;padding: 0;">surya</p> 
+        <p class="text-capitalize text-muted" style="font-size: 10px;margin: 0;padding: 0;">call u later!!</p>
+      </div>
+
+    </div>
+
+    <div class="align-self-center">
+      <img src="./img/6.jpg" height="15px" width="15px" class="rounded-circle" alt="">
+    </div>
+  
+  </div>
+
+  <!-- end row 6 -->
+
+
+
+
+  <!-- row 7 -->
+  
+  <div class=" mb-3 d-flex justify-content-between"  style="cursor: pointer;">
+
+    <div class="d-flex gap-3">
+      <div>
+        <img class="rounded-circle msg-img" style="object-fit: cover;" height="35px" width="35px" src="./img/5.jpg" alt="img">
+      </div>
+
+      <div class="align-self-start">
+        <p class="text-capitalize" style="font-size: 10px;margin: 0;padding: 0;">dhanush</p> 
+        <p class="text-capitalize text-muted" style="font-size: 10px;margin: 0;padding: 0;">let's hang out for the dinner.</p>
+      </div>
+
+    </div>
+
+    <div class="align-self-center">
+      <img src="./img/5.jpg" height="15px" width="15px" class="rounded-circle" alt="">
+    </div>
+  
+  </div>
+
+  <!-- end row 7 -->
+
+
+  <!-- row 8 -->
+  
+  <div class=" mb-3 d-flex justify-content-between "  style="cursor: pointer;">
+
+    <div class="d-flex gap-3">
+      <div>
+        <img class="rounded-circle msg-img" style="object-fit: cover;" height="35px" width="35px" src="./img/4.jpg" alt="img">
+      </div>
+
+      <div class="align-self-start">
+        <p class="text-capitalize" style="font-size: 10px;margin: 0;padding: 0;">SK</p> 
+        <p class="text-capitalize text-muted" style="font-size: 10px;margin: 0;padding: 0;">got the ticket for the FDFS show.</p>
+      </div>
+
+    </div>
+
+    <div class="align-self-center">
+      <img src="./img/4.jpg" height="15px" width="15px" class="rounded-circle" alt="">
+    </div>
+  
+  </div>
+
+  <!-- end row 8 -->
+
+  <!-- hr  -->
+  <hr>
+  <!-- end hr  -->
+
+  <p class="text-primary text-center" style="font-weight: 600;cursor: pointer;">See All in Messenger</p>
+
+
+
+
+
+</div>
+
+<!-- ******************************************* messenger drop down************************** -->
+
+<!-- --------------------------------- end messenger ----------------------------------- -->
+
+
+
+<!-- ---------------------------------  notification ----------------------------------- -->
+
+
+<div class="nav-end-bucket">
+  <i class="fa-solid fa-bell end-icons bg-gray rounded-circle p-2" id="notificationDD" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"></i>
+
+
+  <!-- ---------------------------notification Drop down----------------------------  -->
+
+  <div class="shadow dropdown-menu p-3" aria-labelledby="notificationDD">
+
+    <div class="d-flex justify-content-between" style="width: 280px;">
+      <h4 class="text-capitalize">notifications</h4>
+       <i data-bs-auto-close="outside"  class="fa-solid fa-ellipsis end-icons bg-gray rounded-circle p-2" id="notifydd" data-bs-toggle="dropdown" aria-expanded="false"></i>
+    
+
+      <!-- ******************************** notification ellipsis dropdown ********************** -->
+    
+      <div class="dropdown-menu p-3" aria-labelledby="notifydd" style=" max-height: 500px;overflow: auto;">
+
+ <!-- ******************************   sub-ellipsis Drop down  *********************              -->
+
+        <div class="d-flex gap-3 align-items-center justify-content-between mb-2">
+          <i class="fa-solid fa-check text-muted"></i>
+          <p class="m-0 text-muted" style="font-size: 12px;">Mark all as read</p>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <i class="fa-solid fa-gear text-muted"></i>
+          <p class="m-0 text-muted" style="font-size: 12px;">Privacy Checkup</p>
+        </div>
+
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <i class="fa-solid fa-desktop text-muted"></i>
+          <p class="m-0 text-muted" style="font-size: 12px;">Privacy Shortcut</p>
+        </div>
+
+      </div>
+
+      <!-- ********************************End notification ellipsis dropdown ********************** -->
+
+    </div>
+
+    <div class="d-flex gap-2 mb-2">
+      <p class="m-0 p-1 rounded-pill bg-gray" style="font-size: 12px;">All</p>
+      <p class="m-0 p-1 bg-primary text-white rounded-pill bg-gray" style="font-size: 12px;">Unread</p>
+    </div>
+
+    <div class="mt-1 d-flex justify-content-between align-items-center">
+      <p class="m-0" style="font-weight: 600;">New</p>
+      <a href="#" class="" style="text-decoration: none;font-size: 12px;">See All</a>
+
+    </div>
+
+
+    <div class="d-flex gap-3">
+    <div class="d-flex gap-3 mt-3">
+      <img src="./img/12.jpg" class="rounded-circle" style="height: 35px;width: 35px;object-fit: cover;" alt="">
+      <p style="font-size: 13px;">Hey Nick! There is a plan for tomorrow?
+        <span class="text-primary">about an hour</span>
+      </p>
+    </div>
+
+    <div class="align-self-center">
+      <i class="fa-solid fa-circle text-primary " style="font-size: 10px;"></i>
+    </div>
+
+  </div>
+
+
+  <div class="d-flex gap-3 ">
+    <div class="d-flex gap-3 mt-0">
+      <img src="./img/13.jpg" class="rounded-circle" style="height: 35px;width: 35px;object-fit: cover;" alt="">
+      <p style="font-size: 13px;">Hey Micheal! There is a plan for tomorrow?
+        <span class="text-primary">about an hour</span>
+      </p>
+    </div>
+
+    <div class="align-self-center">
+      <i class="fa-solid fa-circle text-primary " style="font-size: 10px;"></i>
+    </div>
+
+  </div>
+  <div class="d-flex gap-3 ">
+    <div class="d-flex gap-3 mt-0">
+      <img src="./img/14.jpg" class="rounded-circle" style="height: 35px;width: 35px;object-fit: cover;" alt="">
+      <p style="font-size: 13px;">Hey Vikram! There is a plan for tomorrow?
+        <span class="text-primary">about an hour</span>
+      </p>
+    </div>
+
+    <div class="align-self-center">
+      <i class="fa-solid fa-circle text-primary " style="font-size: 10px;"></i>
+    </div>
+
+  </div>
+  <div class="d-flex gap-3 ">
+    <div class="d-flex gap-3 mt-0">
+      <img src="./img/15.jpg" class="rounded-circle" style="height: 35px;width: 35px;object-fit: cover;" alt="">
+      <p style="font-size: 13px;">Hey Vijay! There is a plan for tomorrow?
+        <span class="text-primary">about an hour</span>
+      </p>
+    </div>
+
+    <div class="align-self-center">
+      <i class="fa-solid fa-circle text-primary " style="font-size: 10px;"></i>
+    </div>
+
+  </div>
+  <div class="d-flex gap-3 ">
+    <div class="d-flex gap-3 mt-0">
+      <img src="./img/16.jpg" class="rounded-circle" style="height: 35px;width: 35px;object-fit: cover;" alt="">
+      <p style="font-size: 13px;">Hey Kiran! There is a plan for tomorrow?
+        <span class="text-primary">about an hour</span>
+      </p>
+    </div>
+
+    <div class="align-self-center">
+      <i class="fa-solid fa-circle text-primary " style="font-size: 10px;"></i>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+
+  <!-- ---------------------------End notification Drop down----------------------------  -->
+
+
+
+</div>
+
+<!-- --------------------------------- end notification ----------------------------------- -->
+
+
+
+<!-- --------------------------------- profile ----------------------------------- -->
+
+<div class="nav-end-bucket">
+  <i data-bs-auto-close="outside" class="fa-solid fa-caret-down end-icons bg-gray rounded-circle p-2" id="profileDD" data-bs-toggle="dropdown" aria-expanded="false"></i>  
+
+  <div class="dropdown-menu p-3 shadow" style="width: 300px;" aria-labelledby="profileDD">
+   
+     <div class="d-flex gap-3">
+       <img class="rounded-circle" style="height: 35px;width: 35px;object-fit: cover;" src="./img/17.jpg" alt="">
+
+       <div>
+         <p class="m-0 p-0" style="font-size: 13px;">Guru</p>
+         <span class="text-muted m-0 p-0" style="font-size: 13px;">See your Profile</span>
+       </div>
+     </div>
+
+     <hr>
+
+     <div class="d-flex gap-2 align-items-center">
+
+      <div>
+        <i class="fa-solid fa-circle-exclamation bg-gray rounded-circle p-1"></i>
+      </div>
+
+      <div class="d-flex flex-column">
+        <p class="text-capitalize m-0" style="font-size: 13px;">give feedback</p>
+        <span class="text-muted" style="font-size: 11px;">Help us improve the new Facebook</span>
+      </div>
+
+
+     </div>
+
+     <hr>
+
+     <div class="d-flex justify-content-between" id="setpriv" data-bs-toggle="dropdown" aria-expanded="false">
+
+      <div class="d-flex gap-3" >
+        <i class="fa-solid fa-gear bg-gray rounded-circle p-1"></i>
+        <p class="m-0 text-capitalize" style="">settings & privacy</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+
+     </div>
+
+     <div class="dropdown-menu p-3" style="width: 230px;" aria-labelledby="setpriv">
+
+      <div class="d-flex gap-3">
+        <i class="fa-solid fa-gear bg-gray rounded-circle p-1"></i>
+        <p class="text-capitalize m-0" style="font-size: 15px;">settings</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-lock bg-gray rounded-circle p-1"></i>
+        <p class="text-capitalize m-0" style="font-size: 15px;">privacy checkup</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-lock-open bg-gray rounded-circle p-1"></i>
+       
+        <p class="text-capitalize m-0" style="font-size: 15px;">privacy shortcuts</p>
+      </div>
+      
+      <div class="d-flex gap-3  mt-2">
+        <i class="fa-solid fa-list bg-gray rounded-circle p-1"></i>
+       
+        <p class="text-capitalize m-0" style="font-size: 15px;">activity log</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-newspaper bg-gray rounded-circle p-1"></i>
+        
+        <p class="text-capitalize m-0" style="font-size: 15px;">news feed preferences</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-globe bg-gray rounded-circle p-1"></i>
+      
+        <p class="text-capitalize m-0" style="font-size: 15px;">language</p>
+      </div>
+      
+       
+        
+
+
+    </div>
+
+
+
+
+     <div class="d-flex justify-content-between mt-3" id="setpriv1" data-bs-toggle="dropdown" aria-expanded="false">
+
+      <div class="d-flex gap-3">
+        <i class="fa-solid fa-circle-question  bg-gray rounded-circle p-1"></i>
+        
+        <p class="m-0 text-capitalize" style="">Help and Support</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+
+     </div>
+
+     <div class="dropdown-menu p-3" style="width: 230px;" aria-labelledby="setpriv1">
+
+      <div class="d-flex gap-3">
+        <i class="fa-solid fa-gear bg-gray rounded-circle p-1"></i>
+        <p class="text-capitalize m-0" style="font-size: 15px;">settings</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-lock bg-gray rounded-circle p-1"></i>
+        <p class="text-capitalize m-0" style="font-size: 15px;">privacy checkup</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-lock-open bg-gray rounded-circle p-1"></i>
+       
+        <p class="text-capitalize m-0" style="font-size: 15px;">privacy shortcuts</p>
+      </div>
+      
+      <div class="d-flex gap-3  mt-2">
+        <i class="fa-solid fa-list bg-gray rounded-circle p-1"></i>
+       
+        <p class="text-capitalize m-0" style="font-size: 15px;">activity log</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-newspaper bg-gray rounded-circle p-1"></i>
+        
+        <p class="text-capitalize m-0" style="font-size: 15px;">news feed preferences</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-globe bg-gray rounded-circle p-1"></i>
+      
+        <p class="text-capitalize m-0" style="font-size: 15px;">language</p>
+      </div>
+      
+       
+        
+
+
+    </div>
+
+
+
+
+     <div class="d-flex justify-content-between  mt-3" id="setpriv2" data-bs-toggle="dropdown" aria-expanded="false">
+
+      <div class="d-flex gap-3">
+        <i class="fa-solid fa-moon bg-gray rounded-circle p-1"></i>
+        
+        <p class="m-0 text-capitalize" style="">Display and accessibility</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+
+     </div>
+
+     
+     <div class="dropdown-menu p-3" style="width: 230px;" aria-labelledby="setpriv2">
+
+      <div class="d-flex gap-3">
+        <i class="fa-solid fa-gear bg-gray rounded-circle p-1"></i>
+        <p class="text-capitalize m-0" style="font-size: 15px;">settings</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-lock bg-gray rounded-circle p-1"></i>
+        <p class="text-capitalize m-0" style="font-size: 15px;">privacy checkup</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-lock-open bg-gray rounded-circle p-1"></i>
+       
+        <p class="text-capitalize m-0" style="font-size: 15px;">privacy shortcuts</p>
+      </div>
+      
+      <div class="d-flex gap-3  mt-2">
+        <i class="fa-solid fa-list bg-gray rounded-circle p-1"></i>
+       
+        <p class="text-capitalize m-0" style="font-size: 15px;">activity log</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-newspaper bg-gray rounded-circle p-1"></i>
+        
+        <p class="text-capitalize m-0" style="font-size: 15px;">news feed preferences</p>
+      </div>
+      
+      <div class="d-flex gap-3 mt-2">
+        <i class="fa-solid fa-globe bg-gray rounded-circle p-1"></i>
+      
+        <p class="text-capitalize m-0" style="font-size: 15px;">language</p>
+      </div>
+      
+       
+        
+
+
+    </div>
+
+
+
+
+
+
+     <div class="d-flex justify-content-between  mt-3">
+
+      <div class="d-flex gap-3">
+        <i class="fa-solid fa-gear bg-gray rounded-circle p-1"></i>
+        <p class="m-0 text-capitalize" style="">log out</p>
+      </div>
+
+     
+     </div>
+     
+       
+  </div>
+
+
+</div>
+
+<!-- --------------------------------- end profile ----------------------------------- -->
+              
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ################################### End navbar area ############################################################################  -->
+
+    <!-- ################################### Main area ############################################################################  -->
+
+    <!-- <section class="bg-fb pt-5"> -->
+    <section class="main-area bg-fb mb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- ========================================left side bar ======================================= -->
+
+          <div class="d-none d-xl-block col-xl-3 bg-fb">
+            <div class="p-3 overflow-hidden left-sidebar-bucket">
+              <div
+                class="d-flex gap-3 align-items-center left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/19.jpg"
+                  class="rounded-circle"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >john</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/find-friends.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >friends</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/grp.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+
+                <div class="d-flex flex-column">
+                  <p class="text-capitalize mb-0" style="font-size: 14px">
+                    groups
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <i
+                      class="fa-solid fa-circle text-primary"
+                      style="font-size: 7px"
+                    ></i>
+                    <span class="text-primary" style="font-size: 10px"
+                      >1 new</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/pages.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >pages</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/marketplace.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >marketplace</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/watch.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+
+                <div class="d-flex flex-column">
+                  <p class="text-capitalize mb-0" style="font-size: 14px">
+                    watch
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <i
+                      class="fa-solid fa-circle text-primary"
+                      style="font-size: 7px"
+                    ></i>
+                    <span class="text-primary" style="font-size: 10px"
+                      >9+ new videos</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/memories.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >memories</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/saved.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >saved</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/pages.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >pages</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/events.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >events</span
+                >
+              </div>
+
+              <div
+                class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                style="cursor: pointer"
+              >
+                <img
+                  src="./img/fav.png"
+                  style="height: 35px; width: 35px; object-fit: cover"
+                  alt=""
+                />
+                <span class="text-capitalize" style="font-size: 14px"
+                  >favourites</span
+                >
+              </div>
+
+              <!-- accordion  -->
+
+              <div class="mt-3">
+                <button
+                  id="headingOne"
+                  style="font-size: 14px"
+                  class="accordion-button collapsed acc-btn text-capitalize bg-fb"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  see more
+                </button>
+
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-0">
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/campus.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >campus</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/events.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >events</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/newsfeed.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >newsfeed</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/most-recent.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >most recent</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/ad-center.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >ad center</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/ads-manager.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >ads manager</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/blood-donation.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >blood donation</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/climate.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >climate science centre</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/community.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >community help</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/covid-19.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >covid-19 information centre</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/emotional-health.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >emotional health</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/fund-raisers.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >fundraisers</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/gaming.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >gaming video</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/live-videos.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >live videos</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/messenger.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >messenger</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/messenger-kids.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >messenger-kids</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/play-games.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >play games</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/recent-ad.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >recent ad activity</span
+                      >
+                    </div>
+
+                    <div
+                      class="d-flex gap-3 align-items-center mt-3 left-side-bar-item-bucket"
+                      style="cursor: pointer"
+                    >
+                      <img
+                        src="./img/weather.png"
+                        style="height: 35px; width: 35px; object-fit: cover"
+                        alt=""
+                      />
+                      <span class="text-capitalize" style="font-size: 14px"
+                        >weather</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end accordion  -->
+            </div>
+          </div>
+
+          <!-- ========================================end left side bar ======================================= -->
+
+          <!-- ================================================main content area ==================================== -->
+
+          <div class="col-xl-6 col-12">
+            <!-- story area  -->
+            <div class="d-flex gap-4">
+              <div>
+                <div>
+                  <img
+                    src="./img/5.jpg"
+                    class="rounded"
+                    style="
+                      position: relative;
+                      height: 190px;
+                      width: 95px;
+                      object-fit: cover;
+                    "
+                    alt=""
+                  />
+
+                  <p
+                    class="pt-4 ps-2 text-capitalize bg-white rounded-bottom"
+                    style="
+                      font-weight: 600;
+                      font-size: 14px;
+                      position: absolute;
+                      top: 230px;
+                      left: 11;
+                      height: 60px;
+                      width: 95px;
+                    "
+                  >
+                    create story
+                  </p>
+
+                  <!-- <div> -->
+                  <!-- <i  class=" create-story-plus fa-solid fa-circle-plus bg-white text-primary rounded-circle p-1"></i> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+
+              <div>
+                <img
+                  src="./img/1.jpg"
+                  class="rounded"
+                  style="height: 190px; width: 95px; object-fit: cover"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  src="./img/2.jpg"
+                  class="rounded"
+                  style="height: 190px; width: 95px; object-fit: cover"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  src="./img/3.jpg"
+                  class="rounded"
+                  style="height: 190px; width: 95px; object-fit: cover"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  src="./img/4.jpg"
+                  class="rounded position-relative"
+                  style="height: 190px; width: 95px; object-fit: cover"
+                  alt=""
+                />
+
+                <!-- <i class="right-arrow-icon fa-solid fa-arrow-right bg-white  rounded-circle p-2"></i> -->
+              </div>
+            </div>
+            <!--End story area  -->
+
+            <!-- what on mind  -->
+
+            <div class="mt-3 p-3 bg-white shadow">
+              <div class="d-flex gap-3">
+                <div>
+                  <img
+                    src="./img/11.jpg"
+                    class="rounded-circle"
+                    style="height: 35px; width: 35px"
+                    alt="img"
+                  />
+                </div>
+
+                <input
+                  type="text"
+                  style="font-size: 14px"
+                  class="rounded-pill ps-3 form-control bg-gray"
+                  placeholder="What's on you mind?"
+                />
+              </div>
+              <hr />
+
+              <div class="d-flex justify-content-around">
+                <div class="d-flex gap-3 align-items-center">
+                  <i class="fa-solid fa-video text-danger"></i>
+                  <p
+                    class="mt-3 text-capitalize text-muted"
+                    style="font-size: 15px"
+                  >
+                    live video
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                  <i class="fa-solid fa-photo-film text-success"></i>
+                  <p
+                    class="mt-3 text-capitalize text-muted"
+                    style="font-size: 15px"
+                  >
+                    Photos/Videos
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                  <i class="fa-solid fa-face-smile text-warning"></i>
+                  <p
+                    class="mt-3 text-capitalize text-muted"
+                    style="font-size: 15px"
+                  >
+                    Feeling/Activity
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--end what on mind  -->
+
+            <!-- create room  -->
+
+            <div class="p-3 mt-3 d-flex gap-4 bg-white create-room-1 shadow">
+              <!-- <i class="fa-solid fa-angle-left"></i> -->
+
+              <i
+                class="carousel-control-prev test-left-arr fa-solid fa-angle-left rounded-circle"
+                type="button"
+                style="position: absolute; top: -135px; left: -70px"
+                data-bs-target="#carouselExampleControls1"
+                data-bs-slide="prev"
+              ></i>
+
+              <i
+                class="carousel-control-next test-right-arr fa-solid fa-angle-right rounded-circle"
+                type="button"
+                style="position: absolute; top: -135px; right: -70px"
+                data-bs-target="#carouselExampleControls1"
+                data-bs-slide="next"
+              ></i>
+
+              <div
+                class="room rounded-pill d-flex gap-2 p-2 align-items-center justify-content-between bg-light-blue"
+              >
+                <i
+                  class="fa-solid fa-video align-self-center"
+                  style="font-size: 15px"
+                ></i>
+
+                <span style="font-size: 13px" class="text-capitalize"
+                  >create room</span
+                >
+              </div>
+
+              <div
+                id="carouselExampleControls1"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner room-img-bucket-1">
+                  <div class="carousel-item active">
+                    <div
+                      class="d-flex align-items-center justify-content-around"
+                    >
+                      <img
+                        src="./img/17.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/11.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/1.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/12.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/13.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div
+                      class="d-flex align-items-center justify-content-around"
+                    >
+                      <img
+                        src="./img/2.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/3.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/4.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/5.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+
+                      <img
+                        src="./img/6.jpg"
+                        class="rounded-circle p-2"
+                        style="height: 45px; width: 45px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--End create room  -->
+
+            <!-- Post area  -->
+
+            <div class="bg-white mt-3 p-3 rounded-3 mb-3 shadow">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./img/8.jpg"
+                    class="rounded-circle p-2"
+                    style="height: 45px; width: 45px"
+                    alt=""
+                  />
+
+                  <div class="d-flex flex-column gap-0">
+                    <div class="m-0 p-0">
+                      <p class="text-capitalize mb-0" style="font-weight: 600">
+                        john
+                      </p>
+                    </div>
+
+                    <div class="m-0 p-0 align-self-start">
+                      <span class="text-muted p-0 m-0" style="font-size: 11px"
+                        >Dec 20 at 01:13pm</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div style="cursor: pointer">
+                  <i
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="fa-solid fa-ellipsis rounded-circle p-2"
+                    style="font-size: 18px; background-color: #f0f2f5"
+                  ></i>
+
+                  <!-- ********************************* drop down *************************************** -->
+
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-capitalize text-muted"
+                        href="#"
+                        >Edit Post</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-capitalize text-muted"
+                        href="#"
+                        >delete post</a
+                      >
+                    </li>
+                  </ul>
+
+                  <!-- ********************************* End drop down *************************************** -->
+                </div>
+              </div>
+
+              <div>
+                <p class="pt-3">Hey Guys! This is my first post...</p>
+                <img src="./img/11.jpg" class="img-fluid rounded-3" alt="" />
+
+                <div class="mt-2 p-1 d-flex justify-content-between">
+                  <div>
+                    <i class="fa-solid fa-thumbs-up text-primary pe-1"></i>
+                    <i class="fa-solid fa-heart text-danger pe-1"></i>
+                    <i class="fa-solid fa-face-smile text-warning pe-1"></i>
+                    <span class="text-muted" style="font-size: 13px"
+                      >Titus,Raj and 10 others</span
+                    >
+                  </div>
+
+                  <div class="">
+                    <p class="m-0 p-0" style="font-size: 15px">2 comments</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="d-flex align-items-center justify-content-around">
+                <div class="ps-3">
+                  <i class="fa-solid fa-thumbs-up text-muted pe-1"></i>
+                  Like
+                </div>
+
+                <div
+                  class="pe-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample11"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <i class="fa-solid fa-message text-muted pe-1"></i>
+
+                  Comment
+                </div>
+              </div>
+
+              <!-- collapse  -->
+
+              <div class="collapse mt-3" id="collapseExample11">
+                <hr />
+                <div class="card card-body border-0">
+                  <div class="d-flex gap-3">
+                    <img
+                      src="./img/1.jpg"
+                      style="object-fit: cover; height: 45px; width: 45px"
+                      class="rounded-circle p-1"
+                      alt="img"
+                    />
+
+                    <div class="flex-grow-1">
+                      <h6 class="text-capitalize">Kiran</h6>
+                      <p class="m-0 p-2 bg-gray">So cool!</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex gap-3 mt-3">
+                    <img
+                      src="./img/2.jpg"
+                      style="object-fit: cover; height: 45px; width: 45px"
+                      class="rounded-circle p-1"
+                      alt="img"
+                    />
+
+                    <div class="flex-grow-1">
+                      <h6 class="text-capitalize">micheal</h6>
+                      <p class="m-0 p-2 bg-gray text-capitalize">
+                        sun kissed...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End collapse  -->
+            </div>
+
+            <div class="bg-white p-3 rounded-3 mb-3 shadow">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./img/8.jpg"
+                    class="rounded-circle p-2"
+                    style="height: 45px; width: 45px"
+                    alt=""
+                  />
+
+                  <div class="d-flex flex-column gap-0">
+                    <div class="m-0 p-0">
+                      <p class="text-capitalize mb-0" style="font-weight: 600">
+                        john
+                      </p>
+                    </div>
+
+                    <div class="m-0 p-0 align-self-start">
+                      <span class="text-muted p-0 m-0" style="font-size: 11px"
+                        >Dec 20 at 01:13pm</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div style="cursor: pointer">
+                  <!-- <i class="fa-solid fa-ellipsis rounded-circle p-2" style="font-size: 18px;background-color: #f0f2f5;"></i>    -->
+
+                  <i
+                    id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="fa-solid fa-ellipsis rounded-circle p-2"
+                    style="font-size: 18px; background-color: #f0f2f5"
+                  ></i>
+
+                  <!-- ********************************* drop down *************************************** -->
+
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton2"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-capitalize text-muted"
+                        href="#"
+                        >Edit Post</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-capitalize text-muted"
+                        href="#"
+                        >delete post</a
+                      >
+                    </li>
+                  </ul>
+
+                  <!-- ********************************* End drop down *************************************** -->
+                </div>
+              </div>
+
+              <div>
+                <p class="pt-3">Hey Guys! This is my second post...</p>
+                <img src="./img/12.jpg" class="img-fluid rounded-3" alt="" />
+
+                <div class="mt-2 p-1 d-flex justify-content-between">
+                  <div>
+                    <i class="fa-solid fa-thumbs-up text-primary pe-1"></i>
+                    <i class="fa-solid fa-heart text-danger pe-1"></i>
+                    <i class="fa-solid fa-face-smile text-warning pe-1"></i>
+                    <span class="text-muted" style="font-size: 13px"
+                      >Titus,Raj and 10 others</span
+                    >
+                  </div>
+
+                  <div class="">
+                    <p class="m-0 p-0" style="font-size: 15px">1 comment</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="d-flex align-items-center justify-content-around">
+                <div class="ps-3">
+                  <i class="fa-solid fa-thumbs-up text-muted pe-1"></i>
+                  Like
+                </div>
+
+                <div
+                  class="pe-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <i class="fa-solid fa-message text-muted pe-1"></i>
+
+                  Comment
+                </div>
+              </div>
+
+              <!-- collapse  -->
+
+              <div class="collapse mt-3" id="collapseExample">
+                <hr />
+                <div class="card card-body border-0">
+                  <div class="d-flex gap-3">
+                    <img
+                      src="./img/8.jpg"
+                      style="object-fit: cover; height: 45px; width: 45px"
+                      class="rounded-circle p-1"
+                      alt="img"
+                    />
+
+                    <div class="flex-grow-1">
+                      <h6 class="text-capitalize">john</h6>
+                      <p class="m-0 p-2 bg-gray">Wonderful View!!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End collapse  -->
+            </div>
+
+            <!--End Post area  -->
+          </div>
+
+          <!-- ================================================End main content area ==================================== -->
+
+          <!-- ================================================ right side bar  ==================================== -->
+
+          <div class="d-none d-xl-block col-xl-3">
+            <div style="width: 90%; margin-left: auto">
+              <p
+                class="text-capitalize text-muted"
+                style="font-size: 18px; font-weight: 700"
+              >
+                sponsored
+              </p>
+
+              <div>
+                <div class="d-flex gap-3 sponsor-ad-bucket">
+                  <div class="rounded-5">
+                    <img
+                      src="./img/job.jpg"
+                      class="rounded-5"
+                      style="height: 100px; width: 100px"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <span style="font-size: 14px; font-weight: 600"
+                      >100% Pay after Placement Guarantee</span
+                    >
+                    <p class="text-muted m-0 p-0" style="font-size: 10px">
+                      almabetter.com
+                    </p>
+                  </div>
+
+                  <i
+                    type="button"
+                    class="sponsor-ad-icon fa-solid fa-ellipsis rounded-circle p-2 bg-white shadow"
+                    style="font-size: 18px; height: 35px; width: 35px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></i>
+
+                  <!-- sponsor dropdown -->
+
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <div
+                        class="dropdown-item d-flex gap-3 p-2 align-items-center"
+                      >
+                        <i class="fa-solid fa-square-xmark"></i>
+                        <div class="m-0 p-0">
+                          <h6 class="p-0 m-0">Hide Ad</h6>
+                          <span
+                            class="text-muted p-0 m-0"
+                            style="font-size: 13px"
+                            >Never See this Ad again</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div
+                        class="dropdown-item d-flex gap-3 p-2 align-items-center"
+                      >
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <div class="m-0 p-0">
+                          <h6 class="p-0 m-0">Report Ad</h6>
+                          <span
+                            class="text-muted p-0 m-0"
+                            style="font-size: 13px"
+                            >Tell us the problem with this Ad.</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div
+                        class="dropdown-item d-flex gap-3 p-2 align-items-center"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                        <div class="m-0 p-0">
+                          <h6 class="p-0 m-0">Why am I seeing this ad?</h6>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- end sponsor dropdown -->
+                </div>
+              </div>
+
+              <hr />
+
+              <div>
+                <div class="d-flex justify-content-between">
+                  <p class="m-0 p-0 text-capitalize text-muted">contacts</p>
+
+                  <div class="d-flex gap-2">
+                    <i class="fa-solid fa-video text-muted" role="button"></i>
+                    <i
+                      class="fa-solid fa-magnifying-glass text-muted"
+                      role="button"
+                    ></i>
+                    <!-- <i class="fa-solid fa-ellipsis  text-muted" role="button"></i> -->
+                    <i
+                      data-bs-auto-close="outside"
+                      id="msgDD"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      class="fa-solid fa-ellipsis text-muted fs-6"
+                      style="cursor: pointer"
+                    ></i>
+
+                    <!-- drop down  -->
+
+                    <div
+                      class="dropdown-menu p-2 shadow"
+                      aria-labelledby="msgDD"
+                      style="max-height: 500px; overflow: auto"
+                    >
+                      <!-- ----- row 1 ------  -->
+
+                      <div>
+                        <p
+                          style="font-size: 18px; margin-bottom: 0"
+                          class="text-capitalize"
+                        >
+                          chat settings
+                        </p>
+                        <p
+                          style="margin-bottom: 0; font-size: 10px"
+                          class="text-muted"
+                        >
+                          Customize your Messenger experience
+                        </p>
+                      </div>
+                      <hr />
+
+                      <!-- -----end row 1 ------  -->
+
+                      <!-- -------------- row-2 ---------------  -->
+
+                      <div class="d-flex justify-content-between gap-3">
+                        <div class="m-0 d-flex gap-3 align-items-center">
+                          <i class="fa-solid fa-phone m-0"></i>
+                          <p
+                            class="text-capitalize m-0"
+                            style="font-size: 13px"
+                          >
+                            incoming call sounds
+                          </p>
+                        </div>
+
+                        <div class="form-check form-switch m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </div>
+
+                      <!-- -------------- end row-2 ---------------  -->
+                      <!-- -------------- row-3 ---------------  -->
+
+                      <div class="d-flex justify-content-between gap-3">
+                        <div class="m-0 d-flex gap-4 align-items-center">
+                          <i class="fa-solid fa-volume-off m-0"></i>
+                          <p
+                            class="text-capitalize m-0"
+                            style="font-size: 13px"
+                          >
+                            message sounds
+                          </p>
+                        </div>
+
+                        <div class="form-check form-switch m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </div>
+
+                      <!-- -------------- end row-3 ---------------  -->
+                      <!-- -------------- row-4 ---------------  -->
+
+                      <div class="d-flex justify-content-between gap-3">
+                        <div class="m-0 d-flex gap-3 align-items-center">
+                          <i class="fa-solid fa-spinner m-0"></i>
+                          <p
+                            class="text-capitalize m-0"
+                            style="font-size: 13px"
+                          >
+                            pop-up new messages
+                          </p>
+                        </div>
+
+                        <div class="form-check form-switch m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </div>
+
+                      <!-- -------------- end row-4 ---------------  -->
+
+                      <!-- -------------- row-5 ---------------  -->
+
+                      <div>
+                        <p
+                          class="mt-2 text-center text-capitalize text-muted"
+                          style="font-size: 10px"
+                        >
+                          automatically open new messages
+                        </p>
+                      </div>
+
+                      <!-- -------------- end row-5 ---------------  -->
+                      <hr />
+
+                      <!-- -------------- row-6 ---------------  -->
+
+                      <div class="m-0 d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-toggle-off m-0"></i>
+
+                        <p class="text-capitalize m-0" style="font-size: 13px">
+                          turn off active status
+                        </p>
+                      </div>
+
+                      <!-- -------------- end row-6 ---------------  -->
+
+                      <!-- -------------- row-7 ---------------  -->
+
+                      <div class="m-0 d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-message m-0"></i>
+                        <p class="text-capitalize m-0" style="font-size: 13px">
+                          message request
+                        </p>
+                      </div>
+
+                      <!-- -------------- end row-7 ---------------  -->
+                      <!-- -------------- row-8 ---------------  -->
+
+                      <div class="m-0 d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-phone m-0"></i>
+                        <p class="text-capitalize m-0" style="font-size: 13px">
+                          message delivery settings
+                        </p>
+                      </div>
+
+                      <!-- -------------- end row-8 ---------------  -->
+                      <!-- -------------- row-9 ---------------  -->
+
+                      <div class="m-0 d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-shield-halved m-0"></i>
+                        <p class="text-capitalize m-0" style="font-size: 13px">
+                          Block settngs
+                        </p>
+                      </div>
+
+                      <!-- -------------- end row-9 ---------------  -->
+                    </div>
+
+                    <!--End drop down  -->
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Anderson"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/1.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        anderson
+                      </p>
+                    </div>
+                  </span>
+
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Mick"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/2.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        mick
+                      </p>
+                    </div>
+                  </span>
+
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Maara"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/3.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        Maara
+                      </p>
+                    </div>
+                  </span>
+
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Anderson"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/4.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        John
+                      </p>
+                    </div>
+                  </span>
+
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Kenny"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/1.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        Kenny
+                      </p>
+                    </div>
+                  </span>
+
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Andrew"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/5.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        Andrew
+                      </p>
+                    </div>
+                  </span>
+
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Peter"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/6.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        Peter
+                      </p>
+                    </div>
+                  </span>
+
+                  <span
+                    class="d-inline-block"
+                    tabindex="0"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover focus"
+                    data-bs-placement="left"
+                    data-bs-content="Hendry"
+                  >
+                    <div class="d-flex gap-3 align-items-center" role="button">
+                      <div style="position: relative">
+                        <img
+                          src="./img/7.jpg"
+                          class="rounded-circle p-2"
+                          style="height: 45px; width: 45px"
+                          alt=""
+                        />
+                        <i
+                          class="fa-solid fa-circle text-success"
+                          style="
+                            font-size: 8px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 33px;
+                          "
+                        ></i>
+                      </div>
+                      <p
+                        class="p-0 m-0 text-muted text-capitalize"
+                        style="font-size: 14px"
+                      >
+                        Hendry
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================================================ End right side bar  ==================================== -->
+        </div>
+      </div>
+    </section>
+    <!-- </section> -->
+
+    <!-- ################################### End Main area ############################################################################  -->
+
+    <!-- bootstrap bundle js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main js  -->
+    <script src="./main.js"></script>
+  </body>
+</html>
